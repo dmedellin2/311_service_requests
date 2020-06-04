@@ -1,0 +1,5 @@
+data/
+env.json
+.ipynb_checkpoints/
+.DS_Store
+model/

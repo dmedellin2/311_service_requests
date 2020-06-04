@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>311 NYC Service Request</title>
+</head>
+<body>
+    <form action="/submit">
+        <p>
+            <label for="borough">Select your borough:</label><br>
+
+            <select name="borough" id="borough">
+              <option value="BROOKLYN">Brooklyn</option>
+              <option value="QUEENS">Queens</option>
+              <option value="BRONX">Bronx</option>
+              <option value="MANHATTAN">Manhattan</option>
+              <option value="STATEN ISLAND">Staten Island</option>
+            </select><br>
+
+            <label for="complaint_type">Which category describes your issue best:</label><br>
+
+            <select name="complaint_type" id="complaint_type">
+              <option value=""></option>
+            </select><br>
+
+            <label for="descriptor">Provide additional detail:</label><br>
+
+            <select name="descriptor" id="descriptor">
+              <option ></option>
+            </select><br>
+
+            <label for="location_type">Where did this occur:</label><br>
+
+            <select name="location_type" id="location_type">
+              <option ></option>
+            </select><br>
+
+
+
+
+        </p>
+        <p><button type="submit">Submit</button></p>
+    </form>
+</body>
+</html>
