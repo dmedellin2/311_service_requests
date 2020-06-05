@@ -1,44 +1,307 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>311 NYC Service Request</title>
+
+  <title>311 NYC Service Request</title>
+
 </head>
 <body>
+
+  <h1>NYC 311 Service Request Form</h1>
     <form action="/submit">
         <p>
             <label for="borough">Select your borough:</label><br>
 
-            <select name="borough" id="borough">
+            <select required name="borough" id="borough">
+              <option value="">-Choose a Borough-</option>
               <option value="BROOKLYN">Brooklyn</option>
               <option value="QUEENS">Queens</option>
               <option value="BRONX">Bronx</option>
               <option value="MANHATTAN">Manhattan</option>
               <option value="STATEN ISLAND">Staten Island</option>
-            </select><br>
+            </select><br><br>
 
-            <label for="complaint_type">Which category describes your issue best:</label><br>
-
-            <select name="complaint_type" id="complaint_type">
-              <option value=""></option>
-            </select><br>
-
-            <label for="descriptor">Provide additional detail:</label><br>
-
-            <select name="descriptor" id="descriptor">
-              <option ></option>
-            </select><br>
 
             <label for="location_type">Where did this occur:</label><br>
 
-            <select name="location_type" id="location_type">
-              <option ></option>
+            <select required name="location_type" id="location_type">
+              <option value="">-Choose a Location-</option>
+              <option value="Street/Sidewalk">Street/Sidewalk</option>
+              <option value="Residential Building/House">Residential Building/House</option>
+              <option value="Store/Commercial">Store/Commercial</option>
+              <option value="Club/Bar/Restaurant">Club/Bar/Restaurant</option>
+              <option value="Park/Playground">Park/Playground</option>
+              <option value="House of Worship">House of Worship</option>
+              <option value="Other">Other</option>
+              <option value="Residential Building">Residential Building</option>
+              <option value="Stairwell">Stairwell</option>
+              <option value="Highway">Highway</option>
+              <option value="Hallway">Hallway</option>
+              <option value="House and Store">House and Store</option>
+              <option value="Subway">Subway</option>
+              <option value="Vacant Lot">Vacant Lot</option>
+              <option value="Lobby">Lobby</option>
+              <option value="Common Area">Common Area</option>
+              <option value="Roadway Tunnel">Roadway Tunnel</option>
+              <option value="Subway Station">Subway Station</option>
+              <option value="Parking Lot">Parking Lot</option>
+              <option value="Commercial">Commercial</option>
+              <option value="Bridge">Bridge</option>
             </select><br>
 
+            <div class="ccms_form_element cfdiv_custom" id="style_container_div">
+            <label>Report Problem:</label><br>
+            <select required size="1" id="complaint_type" class=" validate['required']" title="" type="select" name="complaint_type">
+              <option value="">-Choose a Problem-</option>
+              <option value="Noise-Residential">Noise - Residential</option>
+              <option value="Noise-StreetSidewalk">Noise - Street/Sidewalk</option>
+              <option value="Noise-Vehicle">Noise - Vehicle</option>
+              <option value="Noise-Commercial">Noise - Commercial</option>
+              <option value="Noise-Park">Noise - Park</option>
+              <option value="Noise-HouseofWorship">Noise - House of Worship</option>
+              <option value="IllegalParking">Illegal Parking</option>
+              <option value="BlockedDriveway">Blocked Driveway</option>
+              <option value="AbandonedVehicle">Abandoned Vehicle</option>
+              <option value="Non-EmergencyPoliceMatter">Non-Emergency Police Matter</option>
+              <option value="HomelessEncampment">Homeless Encampment</option>
+              <option value="Animal-Abuse">Animal-Abuse</option>
+              <option value="Vending">Vending</option>
+              <option value="Traffic">Traffic</option>
+              <option value="Panhandling">Panhandling</option>
+              <option value="DrugActivity">Drug Activity</option>
+              <option value="DerelictVehicle">Derelict Vehicle</option>
+              <option value="Drinking">Drinking</option>
+              <option value="IllegalFireworks">Illegal Fireworks</option>
+              <option value="Bike/Roller/SkateChronic">Bike/Roller/Skate Chronic</option>
+              <option value="Graffiti">Graffiti</option>
+              <option value="HomelessStreetCondition">Homeless Street Condition</option>
+              <option value="UrinatinginPublic">Urinating in Public</option>
+              <option value="AnimalAbuse">Animal Abuse</option>
+              <option value="DisorderlyYouth">Disorderly Youth</option>
+              <option value="PostingAdvertisement">Posting Advertisement</option>
+              <option value="Squeegee">Squeegee</option>
 
+            </select><div class="clear"></div><div id="error-message-style"></div></div>
+
+            <div id="Noise-Residential"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
+            <label>Provide a description:</label><br>
+              <select  name="descriptor">
+                <option value="">-Choose A Description-</option>
+                <option value="Loud Music/Party">Loud Music/Party</option>
+                <option value="Banging/Pounding">Banging/Pounding</option>
+                <option value="Loud Talking">Loud Talking</option>
+                <option value="Loud Television">Loud Television</option>
+              </select>
+            </div>
+            <div id="IllegalParking"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
+            <label>Provide a description:</label><br>
+              <select name="descriptor">
+                <option value="">-Choose A Description-</option>
+                <option value="Posted Parking Sign Violation">Posted Parking Sign Violation</option>
+                <option value="Blocked Hydrant">Blocked Hydrant</option>
+                <option value="Blocked Sidewalk">Blocked Sidewalk</option>
+                <option value="Commercial Overnight Parking">Commercial Overnight Parking</option>
+                <option value="Blocked Bike Lane">Blocked Bike Lane</option>
+                <option value="Double Parked Blocking Traffic">Double Parked Blocking Traffic</option>
+                <option value="Double Parked Blocking Vehicle">Double Parked Blocking Vehicle</option>
+                <option value="Parking Permit Improper Use">Parking Permit Improper Use</option>
+                <option value="Unauthorized Bus Layover">Unauthorized Bus Layover</option>
+                <option value="Overnight Commercial Storage">Overnight Commercial Storage</option>
+                <option value="Detached Trailer"></option>
+              </select>
+            </div>
+
+            <div id="BlockedDriveway"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
+            <label>Provide a description:</label><br>
+              <select name="descriptor">
+                <option value="">-Choose A Description-</option>
+                <option value="No Access">No Access</option>
+                <option value="Partial Access">Partial Access</option>
+              </select>
+            </div>
+
+            <div id="Noise-Vehicle"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
+            <label>Provide a description:</label><br>
+              <select name="descriptor">
+                <option value="">-Choose A Description-</option>
+                <option value="Car/Truck Music">Car/Truck Music</option>
+                <option value="Car/Truck Horn">Car/Truck Horn</option>
+                <option value="Engine Idling">Engine Idling</option>
+              </select>
+            </div>
+
+            <div id="Noise-StreetSidewalk"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
+            <label>Provide a description:</label><br>
+              <select name="descriptor">
+                <option value="">-Choose A Description-</option>
+                <option value="Loud Music/Party">Loud Music/Party</option>
+                <option value="Loud Talking">Loud Talking</option>
+              </select>
+            </div>
+
+            <div id="AbandonedVehicle"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
+            <label>Provide a description:</label><br>
+              <select name="descriptor">
+                <option value="">-Choose A Description-</option>
+                <option value="With License Plate">With License Plate</option>
+              </select>
+            </div>
+
+            <div id="Noise-Commercial"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
+            <label>Provide a description:</label><br>
+              <select name="descriptor">
+                <option value="">-Choose A Description-</option>
+                <option value="Loud Music/Party">Loud Music/Party</option>
+                <option value="Banging/Pounding">Banging/Pounding</option>
+                <option value="Loud Talking">Loud Talking</option>
+                <option value="Car/Truck Music">Car/Truck Music</option>
+                <option value="Car/Truck Horn">Car/Truck Horn</option>
+                <option value="Loud Television">Loud Television</option>
+              </select>
+            </div>
+
+            <div id="Non-EmergencyPoliceMatter"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
+            <label>Provide a description:</label><br>
+              <select name="descriptor">
+                <option value="">-Choose A Description-</option>
+                <option value="Other (complaint details)">Other (complaint details)</option>
+                <option value="Trespassing">Trespassing</option>
+                <option value="Street Con Game">Street Con Game</option>
+                <option value="Ticket Scalping">Ticket Scalping</option>
+              </select>
+            </div>
+
+            <div id="Animal-Abuse"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
+            <label>Provide a description:</label><br>
+              <select name="descriptor">
+                <option value="">-Choose A Description-</option>
+                <option value="Neglected">Neglected</option>
+                <option value="Other (complaint details)">Other (complaint details)</option>
+                <option value="Tortured">Tortured</option>
+                <option value="No Shelter">No Shelter</option>
+                <option value="Chained">Chained</option>
+                <option value="In Car">In Car</option>
+              </select>
+            </div>
+
+            <div id="Vending"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
+            <label>Provide a description:</label><br>
+              <select name="descriptor">
+                <option value="">-Choose A Description-</option>
+                <option value="In Prohibited Area">In Prohibited Area</option>
+                <option value="Unlicensed">Unlicensed</option>
+              </select>
+            </div>
+
+            <div id="Traffic"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
+            <label>Provide a description:</label><br>
+              <select name="descriptor">
+                <option value="">-Choose A Description-</option>
+                <option value="Congestion/Gridlock">Congestion/Gridlock</option>
+                <option value="Truck Route Violation">Truck Route Violation</option>
+                <option value="Drag Racing">Drag Racing</option>
+              </select>
+            </div>
+
+            <div id="Noise-Park"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
+            <label>Provide a description:</label><br>
+              <select name="descriptor">
+                <option value="">-Choose A Description-</option>
+                <option value="Loud Music/Party">Loud Music/Party</option>
+                <option value="Loud Talking">Loud Talking</option>
+              </select>
+            </div>
+
+            <div id="DrugActivity"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
+            <label>Provide a description:</label><br>
+              <select name="descriptor">
+                <option value="">-Choose A Description-</option>
+                <option value="Use Outside">Use Outside</option>
+                <option value="Use Indoor">Use Indoor</option>
+              </select>
+            </div>
+
+            <div id="DerelictVehicle"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
+            <label>Provide a description:</label><br>
+              <select name="descriptor">
+                <option value="">-Choose A Description-</option>
+                <option value="With License Plate">With License Plate</option>
+              </select>
+            </div>
+
+            <div id="Drinking"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
+            <label>Provide a description:</label><br>
+              <select name="descriptor">
+                <option value="">-Choose A Description-</option>
+                <option value="In Public">In Public</option>
+                <option value="Underage - Licensed Est">Underage - Licensed Est</option>
+                <option value="After Hours - Licensed Est">After Hours - Licensed Est</option>
+              </select>
+            </div>
+
+            <div id="Graffiti"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
+            <label>Provide a description:</label><br>
+              <select name="descriptor">
+                <option value="">-Choose A Description-</option>
+                <option value="Police Report Not Requested">Police Report Not Requested</option>
+                <option value="Police Report Requested">Police Report Requested</option>
+              </select>
+            </div>
+
+            <div id="Noise-HouseofWorship"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
+            <label>Provide a description:</label><br><br>
+              <select name="descriptor">
+                <option value="">-Choose A Description-</option>
+                <option value="Loud Music/Party">Loud Music/Party</option>
+                <option value="Loud Talking">Loud Talking</option>
+                <option value="Banging/Pounding">Banging/Pounding</option>
+              </select>
+            </div>
+
+            <div id="AnimalAbuse"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
+            <label>Provide a description:</label><br>
+              <select name="descriptor">
+                <option value="">-Choose A Description-</option>
+                <option value="Neglected">Neglected</option>
+                <option value="Other (complaint details)">Other (complaint details)</option>
+                <option value="Tortured">Tortured</option>
+                <option value="No Shelter">No Shelter</option>
+                <option value="Chained">Chained</option>
+                <option value="In Car">In Car</option>
+              </select>
+            </div>
+
+            <div id="DisorderlyYouth"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
+            <label>Provide a description:</label><br>
+              <select name="descriptor">
+                <option value="">-Choose A Description-</option>
+                <option value="Playing in Unsuitable Place">Playing in Unsuitable Place</option>
+                <option value="Nuisance/Truant">Nuisance/Truant</option>
+              </select>
+            </div>
+
+            <div id="PostingAdvertisement"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
+            <label>Provide a description:</label><br>
+              <select name="descriptor">
+                <option value="">-Choose A Description-</option>
+                <option value="Building">Building</option>
+                <option value="Vehicle">Vehicle</option>
+              </select>
+
+            </div><div class="clear"></div><div id="error-message-style-sub-1"></div>
 
 
         </p>
         <p><button type="submit">Submit</button></p>
     </form>
+    <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+
+    <script type="text/javascript">
+    $("#complaint_type").change ( function () {
+        var targID  = $(this).val ();
+        $("div.style-sub-1").hide ();
+        $('#' + targID).show ();
+    } )
+    </script>
 </body>
 </html>
