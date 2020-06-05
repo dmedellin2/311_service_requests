@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+  <link rel="stylesheet" href="../css/style.css">
   <title>311 NYC Service Request</title>
 
 </head>
@@ -85,7 +85,7 @@
 
             <div id="Noise-Residential"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br>
-            <select name="descriptor" id="descriptor">
+            <select name="nr_descriptor" id="nr_descriptor">
               <option value="">-Choose A Description-</option>
               <option value="Loud Music/Party">Loud Music/Party</option>
               <option value="Banging/Pounding">Banging/Pounding</option>
@@ -95,7 +95,7 @@
             </div>
             <div id="IllegalParking"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br>
-            <select name="descriptor" id="descriptor">
+            <select name="ip_descriptor" id="ip_descriptor">
               <option value="">-Choose A Description-</option>
               <option value="Posted Parking Sign Violation">Posted Parking Sign Violation</option>
               <option value="Blocked Hydrant">Blocked Hydrant</option>
@@ -113,7 +113,7 @@
 
             <div id="BlockedDriveway"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br>
-            <select name="descriptor" id="descriptor">
+            <select name="bd_descriptor" id="bd_descriptor">
               <option value="">-Choose A Description-</option>
               <option value="No Access">No Access</option>
               <option value="Partial Access">Partial Access</option>
@@ -122,7 +122,7 @@
 
             <div id="Noise-Vehicle"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br>
-            <select name="descriptor" id="descriptor">
+            <select name="nv_descriptor" id="nv_descriptor">
               <option value="">-Choose A Description-</option>
               <option value="Car/Truck Music">Car/Truck Music</option>
               <option value="Car/Truck Horn">Car/Truck Horn</option>
@@ -132,7 +132,7 @@
 
             <div id="Noise-StreetSidewalk"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br>
-            <select name="descriptor" id="descriptor">
+            <select name="nss_descriptor" id="nss_descriptor">
               <option value="">-Choose A Description-</option>
               <option value="Loud Music/Party">Loud Music/Party</option>
               <option value="Loud Talking">Loud Talking</option>
@@ -141,7 +141,7 @@
 
             <div id="AbandonedVehicle"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br>
-            <select name="descriptor" id="descriptor">
+            <select name="av_descriptor" id="av_descriptor">
               <option value="">-Choose A Description-</option>
               <option value="With License Plate">With License Plate</option>
             </select>
@@ -149,7 +149,7 @@
 
             <div id="Noise-Commercial"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br>
-            <select name="descriptor" id="descriptor">
+            <select name="nc_descriptor" id="nc_descriptor">
               <option value="">-Choose A Description-</option>
               <option value="Loud Music/Party">Loud Music/Party</option>
               <option value="Banging/Pounding">Banging/Pounding</option>
@@ -162,7 +162,7 @@
 
             <div id="Non-EmergencyPoliceMatter"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br>
-            <select name="descriptor" id="descriptor">
+            <select name="nepm_descriptor" id="nepm_descriptor">
               <option value="">-Choose A Description-</option>
               <option value="Other (complaint details)">Other (complaint details)</option>
               <option value="Trespassing">Trespassing</option>
@@ -173,7 +173,7 @@
 
             <div id="Animal-Abuse"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br>
-            <select name="descriptor" id="descriptor">
+            <select name="aa1_descriptor" id="aa1_descriptor">
               <option value="">-Choose A Description-</option>
               <option value="Neglected">Neglected</option>
               <option value="Other (complaint details)">Other (complaint details)</option>
@@ -185,7 +185,7 @@
 
             <div id="Vending"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br>
-            <select name="descriptor" id="descriptor">
+            <select name="v_descriptor" id="v_descriptor">
               <option value="">-Choose A Description-</option>
               <option value="In Prohibited Area">In Prohibited Area</option>
               <option value="Unlicensed">Unlicensed</option>
@@ -194,7 +194,7 @@
 
             <div id="Traffic"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br>
-            <select name="descriptor" id="descriptor">
+            <select name="t_descriptor" id="t_descriptor">
               <option value="">-Choose A Description-</option>
               <option value="Congestion/Gridlock">Congestion/Gridlock</option>
               <option value="Truck Route Violation">Truck Route Violation</option>
@@ -204,7 +204,7 @@
 
             <div id="Noise-Park"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br>
-            <select name="descriptor" id="descriptor">
+            <select name="np_descriptor" id="np_descriptor">
               <option value="">-Choose A Description-</option>
               <option value="Loud Music/Party">Loud Music/Party</option>
               <option value="Loud Talking">Loud Talking</option>
@@ -213,7 +213,7 @@
 
             <div id="DrugActivity"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br>
-            <select name="descriptor" id="descriptor">
+            <select name="da_descriptor" id="da_descriptor">
               <option value="">-Choose A Description-</option>
               <option value="Use Outside">Use Outside</option>
               <option value="Use Indoor">Use Indoor</option>
@@ -222,7 +222,7 @@
 
             <div id="DerelictVehicle"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br>
-            <select name="descriptor" id="descriptor">
+            <select name="dv_descriptor" id="dv_descriptor">
               <option value="">-Choose A Description-</option>
               <option value="With License Plate">With License Plate</option>
             </select>
@@ -230,7 +230,7 @@
 
             <div id="Drinking"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br>
-            <select name="descriptor" id="descriptor">
+            <select name="d_descriptor" id="d_descriptor">
               <option value="">-Choose A Description-</option>
               <option value="In Public">In Public</option>
               <option value="Underage - Licensed Est">Underage - Licensed Est</option>
@@ -240,7 +240,7 @@
 
             <div id="Graffiti"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br>
-            <select name="descriptor" id="descriptor">
+            <select name="g_descriptor" id="g_descriptor">
               <option value="">-Choose A Description-</option>
               <option value="Police Report Not Requested">Police Report Not Requested</option>
               <option value="Police Report Requested">Police Report Requested</option>
@@ -249,7 +249,7 @@
 
             <div id="Noise-HouseofWorship"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br><br>
-            <select name="descriptor" id="descriptor">
+            <select name="nhow_descriptor" id="nhow_descriptor">
               <option value="">-Choose A Description-</option>
               <option value="Loud Music/Party">Loud Music/Party</option>
               <option value="Loud Talking">Loud Talking</option>
@@ -259,7 +259,7 @@
 
             <div id="AnimalAbuse"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br>
-            <select name="descriptor" id="descriptor">
+            <select name="aa2_descriptor" id="aa2_descriptor">
               <option value="">-Choose A Description-</option>
               <option value="Neglected">Neglected</option>
               <option value="Other (complaint details)">Other (complaint details)</option>
@@ -272,7 +272,7 @@
 
             <div id="DisorderlyYouth"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br>
-            <select name="descriptor" id="descriptor">
+            <select name="dy_descriptor" id="dy_descriptor">
               <option value="">-Choose A Description-</option>
               <option value="Playing in Unsuitable Place">Playing in Unsuitable Place</option>
               <option value="Nuisance/Truant">Nuisance/Truant</option>
@@ -281,13 +281,20 @@
 
             <div id="PostingAdvertisement"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br>
-            <select name="descriptor" id="descriptor">
+            <select name="pa_descriptor" id="pa_descriptor">
               <option value="">-Choose A Description-</option>
               <option value="Building">Building</option>
               <option value="Vehicle">Vehicle</option>
             </select>
-
             </div><div class="clear"></div><div id="error-message-style-sub-1"></div>
+            <br>
+            <label for="open_data_channel_type">Submission via:</label><br>
+            <select required name="open_data_channel_type" id="open_data_channel_type">
+              <option value="">-Submission Type-</option>
+              <option value="PHONE">PHONE</option>
+              <option value="ONLINE">ONLINE</option>
+              <option value="MOBILE">MOBILE</option>
+            </select><br>
 
 
         </p>
