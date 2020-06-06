@@ -123,13 +123,13 @@ def make_prediction():
     new_df = new_df.append(data, ignore_index=True)
 
     # load model
-    #model = pickle.load(open("./bigmodels/model.p", 'rb'))
+    model = pickle.load(open("./bigmodels/model.p", 'rb'))
 
     # make prediction
-    #pred = model.predict(new_df)[0]
+    pred = model.predict(new_df)[0]
 
 
-    return render_template("confirmation.html", borough = data['borough'], location_type = data['location_type'], complaint_type = data['complaint_type'], descriptor = data['descriptor'], cluster = data['cluster_predicted'], open_data_channel_type = data['open_data_channel_type'])#, pred = round(pred,2))
+    return render_template("confirmation.html", borough = data['borough'], location_type = data['location_type'], complaint_type = data['complaint_type'], descriptor = data['descriptor'], cluster = data['cluster_predicted'], open_data_channel_type = data['open_data_channel_type'], pred = round(pred,2))
 
 # run the app
 if __name__ == '__main__':

@@ -1,36 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
-  <style>
-  @import 'ui-variables';
-
-  body {background-color: powderblue;}
-  h1 {font-family: 'Roboto Slab', serif;
-      padding-left: 30%}
-  p {
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 110%;
-  }
-  label {
-    color: black;
-  font-family: 'Roboto', sans-serif;
-  font-size: 110%;}
-
-  .center {
-    margin: auto;
-    padding-left: 40%;
-  }
-  </style>
   <title>311 NYC Service Request</title>
-
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+<div class="frame">
   <h1>NYC 311 Service Request Form</h1>
   <div class="center">
+    <div class="words">
     <form action="/submit">
         <p>
             <label for="borough">Select your borough:</label><br>
@@ -321,7 +299,7 @@
 
 
         </p>
-        <button class='btn btn-lg' type="submit">SUBMIT</button>
+        <button type="submit">SUBMIT</button>
     </form>
     <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
 
@@ -333,5 +311,11 @@
     } )
     </script>
   </div>
+  </div>
+</div>
+<footer class="footer">
+  Created by: Danielle Medellin, 2020<br>
+  <a href="https://git.generalassemb.ly/dmedellin/capstone">Source code</a> 
+</footer>
 </body>
 </html>

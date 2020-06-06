@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@500&display=swap');
+
+body{
+    background-image: url('./311_City.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: powderblue;
+}
+
+.frame{
+  min-height: calc(100vh - 70px);
+}
+
+.footer{ /* https://css-tricks.com/couple-takes-sticky-footer/ */
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-align: right;
+  height: 50px;
+
+}
+
+p{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 110%;
+}
+
+h1{
+    font-family: 'Roboto Slab', serif;
+    padding-left: 30%;
+    text-shadow: 2px 2px 2px #fff;
+}
+
+label{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 110%;
+}
+
+.center{
+    margin: auto;
+    height: 400px;
+    width: 250px;
+    background-color: white;
+    opacity: 85%;
+    border-radius: 25px;
+    box-shadow: 3px 3px 2px 3px #666; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+
+}
+
+.words{
+  padding-left: 3%;
+  position: absolute;
+}
+
+.box{
+  margin: auto;
+  height: 275px;
+  width: 400px;
+  background-color: white;
+  opacity: 85%;
+  border-radius: 25px;
+  box-shadow: 3px 3px 2px 3px #666;
+}
+
+.results{
+  text-align: left;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding-left: 4%;
+  padding-top: 4%;
+}
+
+h2{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    text-shadow: 2px 2px 2px #fff;
+}
+
+.note{
+    color:green;
+    font-family: 'Roboto Slab', serif;
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+}
+
+button[type=submit] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  font-size: 13px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+a:link{
+  color: powderblue;
+}
+
+a:hover{
+  color: white;
+}
+
+a:visited{
+  color: green;
+}
