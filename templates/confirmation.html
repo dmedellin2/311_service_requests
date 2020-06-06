@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Confirmation:</title>
+
 </head>
 <body>
-<h2>Thank you for your submission!<br>Your request is estimated to be fulfilled in {{pred}} days.<h2>
+<h2>Thank you for your submission!<br>Your request is estimated to be resolved in {{pred}} days.<h2>
 <h3>Your Request:</h3>
 <h4>
-Borough: {{borough}} <br>
+Borough: {{borough}}<br>
 Location: {{location_type}} <br>
 Complaint: {{complaint_type}} <br>
 Description (if applicable): {{descriptor}} <br>
 Submitted by: {{open_data_channel_type}} <br>
-Cluster: {{cluster}} <br></h4>
+Submission Date & Time:<p id="dt"></p>
 
-Contact with any questions.
+<!--https://phoenixnap.com/kb/how-to-get-the-current-date-and-time-javascript-->
+<script>
 
+var today = new Date();
+
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+var dateTime = date+' '+time;
+
+document.getElementById("dt").innerHTML = dateTime;
+</script>
+</h4>
+
+<div class="note">If this is an emergency, please call 911. </div>
 
 </body>
 </html>

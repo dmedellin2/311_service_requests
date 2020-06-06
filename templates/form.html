@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+  <style>
+  @import 'ui-variables';
+
+  body {background-color: powderblue;}
+  h1 {font-family: 'Roboto Slab', serif;
+      padding-left: 30%}
+  p {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 110%;
+  }
+  label {
+    color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 110%;}
+
+  .center {
+    margin: auto;
+    padding-left: 40%;
+  }
+  </style>
   <title>311 NYC Service Request</title>
 
 </head>
 <body>
-
   <h1>NYC 311 Service Request Form</h1>
+  <div class="center">
     <form action="/submit">
         <p>
             <label for="borough">Select your borough:</label><br>
@@ -81,7 +104,7 @@
               <option value="PostingAdvertisement">Posting Advertisement</option>
               <option value="Squeegee">Squeegee</option>
 
-            </select><div class="clear"></div><div id="error-message-style"></div></div>
+            </select><div class="clear"><br></div><div id="error-message-style"></div></div>
 
             <div id="Noise-Residential"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br>
@@ -109,7 +132,7 @@
               <option value="Overnight Commercial Storage">Overnight Commercial Storage</option>
               <option value="Detached Trailer"></option>
             </select>
-            </div>
+          </div>
 
             <div id="BlockedDriveway"  class="style-sub-1"  style="display: none;" name="style" onchange="ChangeDropdowns(this.value)">
             <label>Provide a description:</label><br>
@@ -286,8 +309,8 @@
               <option value="Building">Building</option>
               <option value="Vehicle">Vehicle</option>
             </select>
-            </div><div class="clear"></div><div id="error-message-style-sub-1"></div>
-            <br>
+          </div><div class="clear"><br></div><div id="error-message-style-sub-1"></div>
+
             <label for="open_data_channel_type">Submission via:</label><br>
             <select required name="open_data_channel_type" id="open_data_channel_type">
               <option value="">-Submission Type-</option>
@@ -298,7 +321,7 @@
 
 
         </p>
-        <p><button type="submit">Submit</button></p>
+        <button class='btn btn-lg' type="submit">SUBMIT</button>
     </form>
     <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
 
@@ -309,5 +332,6 @@
         $('#' + targID).show ();
     } )
     </script>
+  </div>
 </body>
 </html>
