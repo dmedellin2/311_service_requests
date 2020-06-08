@@ -98,7 +98,7 @@ Lastly, we would extend this research to cover more types of service requests. W
     
 [Johnson, Jesse. “K-Modes.”](shapeofdata.wordpress.com/2014/03/04/k-modes/.)
 
-[JSFiddle.net](JSFiddle. JSFiddle, jsfiddle.net/7sntefum/.)  
+[JSFiddle.net](jsfiddle.net/7sntefum/.)  
     
 [NYC OpenData. “311 Service Requests from 2010 to Present: NYC Open Data.”](data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9.)  
     
