@@ -1,6 +1,17 @@
 # NYC 311 Service Requests
 #### Danielle Medellin [GitHub](https://github.com/dmedellin2)
 
+### This Repo Includes:
+[1 - Data Gathering Notebook](./code/1_data_gathering_311.ipynb)  
+[2 - Service Request Models](./code/2_service_request_model.ipynb)  
+[Presentation Slides](./slides_and_instructions/dmedellin_service_request_project.pdf)  
+App Files:
+    - [Version 1](app_glm.py)
+    - [Version 2](app_ada.py)
+    - [Pickled Models](./models)
+    - [HTML Templates](./templates)
+    - [CSS Style](./static/css)
+
 ## Problem Statement
 According to the NYC311 online portal, "a Service Request is your request for the City to provide you with assistance, perform an inspection, or address a problem. NYC311 can accept Service Requests for a wide range of issues, including over 500 complaint types. Service Requests can help you get a pothole fixed in your neighborhood, the heat turned on in your apartment, or a refund for an overpaid parking ticket." Due to the fact that there are so many different reasons for submitting service requests to 311, all with a wide range of urgency and importance, it can be difficult to gauge how long it will take for a request to actually get resolved.
 
