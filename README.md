@@ -6,6 +6,7 @@
 [2 - Service Request Models](./code/2_service_request_model.ipynb)  
 [Presentation Slides](./slides_and_instructions/dmedellin_service_request_project.pdf)  
 App Files:
+    - [Instructions](./slides_and_instructions/app_instructions.pdf) 
     - [Version 1](app_glm.py)
     - [Version 2](app_ada.py)
     - [Pickled Models](./models)
