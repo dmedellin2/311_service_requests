@@ -1,6 +1,18 @@
 # NYC 311 Service Requests
 #### Danielle Medellin [GitHub](https://github.com/dmedellin2)
 
+### This Repo Includes:
+- [1 - Data Gathering Notebook](./code/1_data_gathering_311.ipynb)  
+- [2 - Service Request Models Notebook](./code/2_service_request_model.ipynb)  
+- [Presentation Slides](./slides_and_instructions/dmedellin_service_request_project.pdf)  
+- App Files:
+    - [Instructions](./slides_and_instructions/app_instructions.pdf) 
+    - [Version 1](app_glm.py)
+    - [Version 2](app_ada.py)
+    - [Pickled Models](./models)
+    - [HTML Templates](./templates)
+    - [CSS Style](./static/css)
+
 ## Problem Statement
 According to the NYC311 online portal, "a Service Request is your request for the City to provide you with assistance, perform an inspection, or address a problem. NYC311 can accept Service Requests for a wide range of issues, including over 500 complaint types. Service Requests can help you get a pothole fixed in your neighborhood, the heat turned on in your apartment, or a refund for an overpaid parking ticket." Due to the fact that there are so many different reasons for submitting service requests to 311, all with a wide range of urgency and importance, it can be difficult to gauge how long it will take for a request to actually get resolved.
 
@@ -9,7 +21,7 @@ The NYC 311 receives millions of requests a year. In fact, in 2018 they received
 
 A citizen can submit a 311 request in various ways including by phone, online, or using mobile. If they do so with an email or a phone number, they will get a confirmation message which includes the details of the request. What is not included in this confirmation, is expected wait time until the request will be resolved and closed. Obviously, there are many factors that can affect one's wait time, but given the amount of 311 requests received, it should be possible to find trends in the wait times of these requests and give citizens, at the minimum, an estimate of how long they can expect to wait until their request is resolved. 
 
-Our goal is to build a regression model that will predict the wait time a citizen can expect given the factors of their request. Our model's success will be measured with root-mean squared error (RMSE). 
+Our goal is to build a regression model that will predict the wait time a citizen can expect given the factors of their request. Our model's success will be measured with root-mean squared error (RMSE). Using RMSE allows us to look at our error in the same units as our target variable to get a good idea of our model's success.
 
 Additionally, we hope to build an applet protoype that mimics what inputting a service request might look like, and in addition to just getting a description of the request, the app will also return an estimated wait time for the request to be closed.
 
@@ -85,6 +97,8 @@ Lastly, we would extend this research to cover more types of service requests. W
 [“Getting Started with NYC OpenData and the Socrata API.”](holowczak.com/getting-started-with-nyc-opendata-and-the-socrata-api/5/.)  
     
 [Johnson, Jesse. “K-Modes.”](shapeofdata.wordpress.com/2014/03/04/k-modes/.)
+
+[JSFiddle.net](JSFiddle. JSFiddle, jsfiddle.net/7sntefum/.)
     
 [NYC OpenData. “311 Service Requests from 2010 to Present: NYC Open Data.”](data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9.)  
     
