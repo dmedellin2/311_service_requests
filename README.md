@@ -92,22 +92,22 @@ Being we did not anticipate to see negative wait times in our initial pull of th
 Lastly, we would extend this research to cover more types of service requests. We looked exclusively at those that are related to the NYPD agency. We would further improve our app by adding additional data from other agencies and service request types and either adding that to the current model, or making individual models for each agency. 
 
 ## References
-[Ashish. “Bank Customer Clustering (K-Modes Clustering).”](www.kaggle.com/ashydv/bank-customer-clustering-k-modes-clustering.)
+[Ashish. “Bank Customer Clustering (K-Modes Clustering).”](www.kaggle.com/ashydv/bank-customer-clustering-k-modes-clustering)
     
-[“Getting Started with NYC OpenData and the Socrata API.”](holowczak.com/getting-started-with-nyc-opendata-and-the-socrata-api/5/.)  
+[“Getting Started with NYC OpenData and the Socrata API.”](holowczak.com/getting-started-with-nyc-opendata-and-the-socrata-api/5/)  
     
-[Johnson, Jesse. “K-Modes.”](shapeofdata.wordpress.com/2014/03/04/k-modes/.)
+[Johnson, Jesse. “K-Modes.”](shapeofdata.wordpress.com/2014/03/04/k-modes/)
 
-[JSFiddle.net](jsfiddle.net/7sntefum/.)  
+[JSFiddle.net](jsfiddle.net/7sntefum/)  
     
-[NYC OpenData. “311 Service Requests from 2010 to Present: NYC Open Data.”](data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9.)  
+[NYC OpenData. “311 Service Requests from 2010 to Present: NYC Open Data.”](data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9)  
     
-[NYC311. “About NYC311.”](www1.nyc.gov/311/311-sets-new-record-in-2018.page.)  
+[NYC311. “About NYC311.”](www1.nyc.gov/311/311-sets-new-record-in-2018.page)  
     
-[Shadkam-Farrokhi, Mahdi. “ARIMA Review.”](git.generalassemb.ly/DSI-US-11/local_arima.)  
+[Shadkam-Farrokhi, Mahdi. “ARIMA Review.”](git.generalassemb.ly/DSI-US-11/local_arima)  
     
-[Shadkam-Farrokhi, Mahdi. “Using cross_val_score with a Custom Metric.”](git.generalassemb.ly/DSI-US-11/local_faq/blob/master/code/custom_cross_val_score.ipynb.)  
+[Shadkam-Farrokhi, Mahdi. “Using cross_val_score with a Custom Metric.”](git.generalassemb.ly/DSI-US-11/local_faq/blob/master/code/custom_cross_val_score.ipynb)  
     
-[“Socrata Developer Portal.”](dev.socrata.com/foundry/data.cityofnewyork.us/erm2-nwe9.)  
+[“Socrata Developer Portal.”](dev.socrata.com/foundry/data.cityofnewyork.us/erm2-nwe9)  
 
-[Xmunoz. “Xmunoz/Sodapy.”](github.com/xmunoz/sodapy/blob/master/examples/soql_queries.ipynb.)
+[Xmunoz. “Xmunoz/Sodapy.”](github.com/xmunoz/sodapy/blob/master/examples/soql_queries.ipynb)
